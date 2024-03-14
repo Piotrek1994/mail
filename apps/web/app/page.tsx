@@ -32,10 +32,10 @@ export default function Page(): JSX.Element {
   };
 
   return (
-    <div>
-      Create email from provided forms...
-      <div>
-        <form onSubmit={handleSubmit}>
+    <div className="container">
+      <div className="form-container">
+        <p>Create email from provided forms 😜</p>
+        <form className="email-form" onSubmit={handleSubmit}>
           <div>
             <label htmlFor="heading">Title of email</label>
             <input
@@ -60,6 +60,7 @@ export default function Page(): JSX.Element {
 
           <div>
             <label htmlFor="content">Content</label>
+
             <textarea
               onChange={handleChange}
               id="content"
